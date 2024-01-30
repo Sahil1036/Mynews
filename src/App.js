@@ -32,7 +32,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <BrowserRouter basename="">
+        <BrowserRouter basename="/Mynews">
         <Navbar setQuery={this.setQuery}/>
         <LoadingBar
         color='#f11946'
