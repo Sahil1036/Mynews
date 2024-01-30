@@ -57,6 +57,7 @@ export default class News extends Component {
     let usedata = await data.json();
     this.props.setProgress(70);
     this.setState({
+       page:this.state.page+1,
       articles: this.state.articles.concat(usedata.articles),
     });
     this.props.setProgress(100);
